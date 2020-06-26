@@ -1,0 +1,88 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mallanna', sans-serif;
+    margin: 0 auto;
+    background: #e6d9d9;
+    color: #662c33;
+}
+
+
+header {
+    display: flex;
+}
+
+
+
+/* ================================= 
+  Navigation
+==================================== */
+
+.main-header {
+    justify-content: space-between;
+}
+
+.name,
+.main-nav li {
+    display: inline-flex;
+    height: 75px;
+}
+
+.name {
+    padding: 12px;
+}
+
+.main-nav a {
+    background: #662c33;
+    color: #e6d9d9;
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1.5em; 
+    border-radius: 4px;
+}
+
+.main-nav a:hover {
+    background: blue;
+}
+
+
+/* ================================= 
+  ato main page
+==================================== */
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+    display-direction: row;
+
+}
+
+@media  (min-width: 1024px) {
+}
+
+
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}

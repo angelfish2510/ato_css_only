@@ -3,7 +3,9 @@
 ==================================== */
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -14,9 +16,10 @@ body {
 }
 
 
-/* header {
-    display: flex;
-} */
+header,
+footer {
+    width: 100%;
+}
 
 
 
@@ -24,24 +27,43 @@ body {
   Navigation
 ==================================== */
 
+/* .name,
+.main-nav {
+    align-items: center;
+} */
+
 .name,
 .main-nav {
+    display: block;
     margin: auto;
-}
-
-.name {
-    padding: 12px;
 }
 
 .main-nav li {
     list-style-type: none;
-    margin: 5px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0;
 }
+
+
+/* .name a,
+.main-nav a {
+    padding: 5px 10px;
+    display: block;
+    text-decoration: none;
+
+} */
+
 
 .main-nav a {
     background: #662c33;
     color: #e6d9d9;
     text-decoration: none;
+    display: block;
+    padding: 3px;
+    margin-top: 1px;
     /* margin: 5px;
     padding-left: 5px;
     padding-right: 5px;
@@ -59,9 +81,18 @@ body {
   ato main page
 ==================================== */
 
+.wrapper {
+    width: 100%;
+    /* max-width: 960px; */
+    margin: 0 auto;
+}
+
 h1 {
-    display: flex;
-    justify-content: center;
+    /* /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    width: 70%;
+    margin: auto;
 }
 
 .main-flex {
@@ -92,7 +123,9 @@ figcaption:hover {
     display: flex;
     max-width: 70%;
     border-radius: 4px;
-    margin: auto;
+    /* justify-content: center;
+    align-content: center;
+    align-items: center; */
 }
 
 
@@ -102,30 +135,52 @@ figcaption:hover {
 
 @media (min-width: 768px) {
     
-    .main-header {
+    .main-header,
+    .main-nav {
         display: flex;
-        justify-content: space-between;
     }
-    
-    .name,
+
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .main-nav li {
         display: inline-flex;
-        display-direction: row;
-        height: 75px;
+        justify-content: space-around;
     }
-    
-    .name {
-        padding: 12px;
+
+    h1 {
+      margin-left: 10px;
     }
-    
-    .main-nav a {
-        margin: 5px;
-        padding-left: 5px;
-        padding-right: 5px;
-        font-size: 1.5em; 
 }
 
 @media  (min-width: 1024px) {
+
+    .main-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .name {
+        margin-left: 5px;
+    }
+
+    .main-nav {
+        margin-right: 5px;
+    }
+
+    .main-nav li {
+        font-size: 1.5em;
+    }
+
+    .main-nav a {
+        margin-left: 5px;
+    }
+        
+
+
 }
 
 

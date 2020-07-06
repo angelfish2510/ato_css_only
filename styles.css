@@ -111,12 +111,12 @@ h2 {
     text-align: center;
 }
 
-
+/* 
 .main-flex {
     border-width: 8px;
     border-style: solid;
     border-color: orange;
-}
+} */
 
 .why {
     display: flex;
@@ -126,6 +126,7 @@ h2 {
     padding: 10px;
     border: 1.5px solid #452024;
     border-radius: 4px;
+    margin-bottom: 10px;
 } 
 
 .how,
@@ -136,6 +137,7 @@ h2 {
     padding-left: 4px;
     border: 1.5px solid #452024;
     border-radius: 4px;
+    margin-bottom: 10px;
 }
 
 
@@ -195,7 +197,7 @@ figcaption:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 70%;
+    max-width: 95%;
     border-radius: 4px;
     /* justify-content: center;
     align-content: center;
@@ -223,6 +225,10 @@ figcaption:hover {
     .main-nav li {
         display: inline-flex;
         justify-content: space-around;
+    }
+
+    .mission {
+        margin-top: 10px;
     }
 
     h1 {
@@ -265,6 +271,10 @@ figcaption:hover {
         border: 3px solid #452024;
 
     }
+
+    .main-img {
+        max-width: 70%;
+    }
 /* 
     .how h3,
     .process h3 {
@@ -277,9 +287,9 @@ figcaption:hover {
         flex-direction: column;
         list-style-position: inside;
         /* list-style: list-item; */
-        /* padding: 2px; */
+        /* padding: 2px;
 
-    }
+    }*/
 
 }
 

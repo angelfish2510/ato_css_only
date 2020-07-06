@@ -166,8 +166,70 @@ h2 {
 }
 
 /* ================================= 
+  sponsors page
+==================================== */
+
+.network {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1.5px solid #452024;
+}
+
+.identify-sponsors {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    align-items: center;
+    padding: 10px;
+    border: 1.5px solid #452024;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+} 
+
+.identify-sponsors p,
+.network h2 {
+    padding-bottom: 15px;
+}
+
+.identify-sponsors ul,
+.sponsors-role ul {
+    list-style-position: inside;
+}
+
+.sponsors-role {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    align-items: center;
+    padding: 10px;
+    border: 1.5px solid #452024;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.sponsor-bios {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    align-items: center;
+    border: 1.5px solid #452024;
+    border-radius: 4px;
+}
+
+
+
+/* ================================= 
   Images
 ==================================== */
+
+.caption-placeholder,
+.placeholder-text {
+    color: yellow;
+}
+
 
 figcaption {
     border-radius: 2px;
@@ -291,6 +353,61 @@ figcaption:hover {
 
     }*/
 
+    .identify-sponsors {
+        display: block;
+        width: 70%;
+        float: left;
+        text-align: left;      
+    }
+
+    .network {
+        display: block;
+        width: 70%;
+        float: right;
+        text-align: right;
+        padding-right: 15px;
+        padding-left: 10px;  
+        margin-bottom: 15px;   
+    }
+
+    .sponsors-role {
+        display: flex;
+        width: 100%;
+        text-align: center;      
+    }
+
+    .bios-text {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* .sponsor-bios h2 {
+        display: block;
+        margin: auto;
+
+    } */
+
+    /* .ched,
+    .patrick  {
+        border: 1.5px solid #452024;
+        border-radius: 4px;
+    } */
+
+
+    .ched {
+        align-items: left;
+    }
+
+    .placeholder-sponsors {
+        width: 12%;
+    }
+
+
+
+    .patrick {
+        text-align: right;
+    }
+
 }
 
 @media  (min-width: 1024px) {
@@ -299,6 +416,7 @@ figcaption:hover {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
     }
     
     .name {

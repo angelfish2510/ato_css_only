@@ -27,15 +27,19 @@ footer {
   Navigation
 ==================================== */
 
-/* .name,
-.main-nav {
-    align-items: center;
-} */
+.main-header {
+    border-bottom: 1.5px solid #452024;
+
+}
 
 .name,
 .main-nav {
     display: block;
     margin: auto;
+}
+
+.main-nav {
+    margin-bottom: 8px;
 }
 
 .main-nav li {
@@ -62,8 +66,8 @@ footer {
     color: #e6d9d9;
     text-decoration: none;
     display: block;
-    padding: 3px;
-    margin-top: 1px;
+    padding: 1.1px;
+    margin-top: 5px;
     /* margin: 5px;
     padding-left: 5px;
     padding-right: 5px;
@@ -87,13 +91,26 @@ footer {
     margin: 0 auto;
 }
 
-h1 {
-    /* /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-    width: 70%;
-    margin: auto;
+.mission {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+
+h2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.mission p {
+    padding-bottom: 25px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
 
 .main-flex {
     border-width: 8px;
@@ -101,6 +118,50 @@ h1 {
     border-color: orange;
 }
 
+.why {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    align-items: center;
+    padding: 10px;
+    border: 1.5px solid #452024;
+    border-radius: 4px;
+} 
+
+.how,
+.process {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4px;
+    border: 1.5px solid #452024;
+    border-radius: 4px;
+}
+
+
+.sublist {
+    margin-left: 20px;
+}
+
+.wrapper2 :hover{
+    background: white;
+    border: 3px solid #452024;
+
+}
+
+.how h3,
+.process h3 {
+    margin: 0 auto;
+}
+
+.how ul,
+.process ul {
+    display: flex;
+    flex-direction: column;
+    list-style-position: inside;
+    padding: 2px;
+
+}
 
 /* ================================= 
   Images
@@ -112,6 +173,17 @@ figcaption {
     transition-property: background, border-radius, color;
     transition-timing-function: ease-in;
 }
+/* 
+
+.img-flex {
+    display: flex;
+    align-items: center;
+} */
+
+.caption {
+    display: flex;
+    justify-content: center;
+}
 
 figcaption:hover {
     background: #804d51;
@@ -120,13 +192,16 @@ figcaption:hover {
 }
 
 .main-img {
-    display: flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 70%;
     border-radius: 4px;
     /* justify-content: center;
     align-content: center;
     align-items: center; */
 }
+
 
 
 /* ================================= 
@@ -153,6 +228,59 @@ figcaption:hover {
     h1 {
       margin-left: 10px;
     }
+
+    .why {
+        margin: 40px;
+    }
+
+
+
+    .logistics {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 0;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+
+    .placeholder {
+        width: 5%;
+        border: none;
+    }
+
+    .how,
+    .process {
+        width: 45%;
+        /* display: flex;
+        flex-direction: column;
+        padding-left: 4px;
+        border: 1.5px solid #452024;
+        border-radius: 4px; */
+    }
+
+    .wrapper2 :hover{
+        background: white;
+        border: 3px solid #452024;
+
+    }
+/* 
+    .how h3,
+    .process h3 {
+        margin: 0 auto;
+    } */
+
+    /* .how ul,
+    .process ul {
+        display: flex;
+        flex-direction: column;
+        list-style-position: inside;
+        /* list-style: list-item; */
+        /* padding: 2px; */
+
+    }
+
 }
 
 @media  (min-width: 1024px) {
@@ -178,9 +306,8 @@ figcaption:hover {
     .main-nav a {
         margin-left: 5px;
     }
-        
 
-
+ 
 }
 
 

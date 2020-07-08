@@ -293,7 +293,7 @@ h2 {
 }
 
 .donate {
-    border: 3px solid #244520;
+    border: 7px dashed #244520;
     color: #202445;
     background: RGB(219, 219, 228);
     border-radius: 4px;

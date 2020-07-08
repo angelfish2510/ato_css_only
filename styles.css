@@ -494,6 +494,7 @@ figcaption:hover {
     .bios-text {
         display: flex;
         flex-direction: row;
+        /* flex-wrap: wrap; */
     }
 
     /* .sponsor-bios h2 {
@@ -594,6 +595,19 @@ figcaption:hover {
         flex-wrap: wrap;
         /* margin: auto; */
     }
+
+
+    .afieni,
+    .ched-achiever,
+    .yusef,
+    .kerikay-achiever {
+        flex-wrap: wrap;
+        padding: 5px;
+        margin: 5px;
+        width: 22%;
+        /* justify-content: center; */
+    }
+
 
     /* .path-network {
         display: block;

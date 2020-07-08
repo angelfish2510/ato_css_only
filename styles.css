@@ -129,6 +129,11 @@ h2 {
     margin-bottom: 10px;
 } 
 
+.kerikay {
+    display: flex;
+    flex-direction: column;
+}
+
 .how,
 .process {
     width: 100%;
@@ -312,7 +317,6 @@ h2 {
     color: yellow;
 }
 
-
 figcaption {
     border-radius: 2px;
     transition-duration: 1s, 3s;
@@ -348,7 +352,9 @@ figcaption:hover {
     align-items: center; */
 }
 
-
+.kerikay-img {
+    border-radius: 4px;
+}
 
 /* ================================= 
   Media Queries
@@ -383,7 +389,26 @@ figcaption:hover {
         margin: 40px;
     }
 
+    .kerikay-header {
+        text-align: center;
+    }
 
+    .kerikay {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .kerikay figure {
+        width: 35%
+    }
+
+    .kerikay p {
+        width: 55%
+    }
+
+    /* .placeholder-kerikay {
+        width: 5%;
+    } */
 
     .logistics {
         display: flex;
@@ -395,7 +420,7 @@ figcaption:hover {
         
     }
 
-    .placeholder {
+    .placeholder-log {
         width: 5%;
         border: none;
     }

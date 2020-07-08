@@ -152,7 +152,7 @@ h2 {
 
 .wrapper2 :hover{
     background: white;
-    border: 3px solid #452024;
+    /* border: 3px solid #452024; */
 
 }
 
@@ -437,7 +437,7 @@ figcaption:hover {
 
     .wrapper2 :hover{
         background: white;
-        border: 3px solid #452024;
+        /* border: 3px solid #452024; */
 
     }
 

@@ -216,7 +216,10 @@ h2 {
 .how :hover,
 .process :hover,
 .patrick-words :hover,
-.jahnene-words :hover {
+.jahnene-words :hover,
+.sponsors-role-list :hover,
+.identify-sponsors :hover,
+.network :hover {
     background: white;
     /* border: 3px solid #452024; */
 
@@ -243,7 +246,8 @@ h2 {
 ==================================== */
 
 .patrick,
-.jahnene {
+.jahnene,
+.sponsors-with-pic {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -257,7 +261,8 @@ h2 {
 }
 
 .patrick-words,
-.jahnene-words {
+.jahnene-words,
+.sponsors-role {
     display: flex;
     flex-direction: column;
     max-width: 55%;
@@ -460,11 +465,16 @@ figcaption {
 .patrick-pic,
 .patrick-img,
 .jahnene-pic,
-.jahnene-img {
+.jahnene-img,
+.kids-with-certs-img {
     display: flex;
     flex-direction: column;
     margin: auto;
     /* justify-items: center; */
+}
+
+.kids-with-certs-img {
+    margin-left: 15px;
 }
 
 .caption {
@@ -485,7 +495,8 @@ figcaption:hover {
 .main-img,
 .kerikay-img,
 .patrick-img,
-.jahnene-img {
+.jahnene-img,
+.kids-with-certs-img {
     /* display: block; */
     /* margin-left: auto;
     margin-right: auto; */

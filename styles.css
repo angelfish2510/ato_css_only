@@ -139,16 +139,29 @@ h2 {
     border-color: orange;
 } */
 
-.why {
+.wrapper2 {
     display: flex;
-    flex-direction: column;
-    flex-basis: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
     align-items: center;
+    justify-content: center;
     padding: 10px;
     border: 1.5px solid #452024;
     border-radius: 4px;
-    margin-bottom: 10px;
-} 
+    /* margin-bottom: 10px; */
+}
+
+.why {
+    display: flex;
+    flex-direction: column;
+    max-width: 55%;
+    flex-grow: 2;
+}
+
+.why h3 {
+    margin: auto;
+}
 
 .kerikay {
     display: flex;
@@ -344,16 +357,18 @@ figcaption {
     transition-property: background, border-radius, color;
     transition-timing-function: ease-in;
 }
-/* 
 
+
+.ron-ched,
 .img-flex {
     display: flex;
-    align-items: center;
-} */
+    flex-direction: column;
+    margin: auto;
+    /* justify-items: center; */
+}
 
 .caption {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 figcaption:hover {
@@ -361,16 +376,24 @@ figcaption:hover {
     border-radius: 6px;
     color: #ffffff;
 }
+/* 
+.img-flex {
+    flex-grow: 1;
+} */
 
 .main-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /* display: block; */
+    /* margin-left: auto;
+    margin-right: auto; */
     max-width: 95%;
+    /* width: 400px;
+    height: 272px; */
+    flex-grow: 1;
     border-radius: 4px;
-    /* justify-content: center;
+    justify-content: center;
     align-content: center;
-    align-items: center; */
+    overflow: hidden;
+    /* align-items: center; */
 }
 
 .kerikay-img {
@@ -426,8 +449,17 @@ figcaption:hover {
       margin-left: 10px;
     }
 
-    .why {
-        margin: 40px;
+    .img-flex {
+        max-width: 40%;
+    }
+
+    .ron-ched,
+    .img-flex {
+        margin: 1px;
+    }
+    
+    .why p {
+        text-align: right;
     }
 
     .kerikay-header {
@@ -482,9 +514,9 @@ figcaption:hover {
 
     }
 
-    .main-img {
+    /* .main-img {
         max-width: 70%;
-    }
+    } */
 /* 
     .how h3,
     .process h3 {
@@ -681,6 +713,11 @@ figcaption:hover {
 
     .main-nav a {
         margin-left: 5px;
+    }
+
+    .why {
+        max-width: 59%;
+        justify-content: space-around;
     }
 
  

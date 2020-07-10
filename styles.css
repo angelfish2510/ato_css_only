@@ -140,7 +140,8 @@ h2 {
 } */
 
 .wrapper2,
-.kerikay {
+.kerikay,
+.logistics {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -173,6 +174,15 @@ h2 {
     flex-direction: column;
 } */
 
+/* .logistics {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 0;
+    justify-content: space-between;
+    
+} */
+
 .how,
 .process {
     width: 100%;
@@ -181,7 +191,7 @@ h2 {
     padding-left: 4px;
     border: 1.5px solid #452024;
     border-radius: 4px;
-    margin-bottom: 10px;
+    margin: 5px;
 }
 
 
@@ -190,11 +200,15 @@ h2 {
 }
 
 .why :hover,
-.kerikay-words :hover {
+.kerikay-words :hover,
+.how :hover,
+.process :hover {
     background: white;
     /* border: 3px solid #452024; */
 
 }
+
+
 
 .how h3,
 .process h3 {
@@ -489,15 +503,6 @@ figcaption:hover {
         width: 5%;
     } */
 
-    .logistics {
-        display: flex;
-        flex-direction: row;
-        flex-basis: 0;
-        justify-content: space-between;
-        margin-left: 20px;
-        margin-right: 20px;
-        
-    }
 
     .placeholder-log {
         width: 5%;

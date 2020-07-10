@@ -313,19 +313,6 @@ h2 {
     margin: 5px;
 }
 
-/* 
-.identify-sponsors {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 0;
-    align-items: center;
-    padding: 10px;
-    border: 2.5px solid #452024;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    margin-top: 15px;
-}  */
-
 .identify-sponsors p,
 .network h2 {
     padding-bottom: 15px;
@@ -368,7 +355,7 @@ h2 {
     /* max-width: 100%; */
 }
 
-.achievement,
+/* .achievement, */
 .path-app,
 .path-network,
 .path-support,
@@ -382,15 +369,47 @@ h2 {
 
 }
 
+.achievement,
+.achiever {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 2.5px solid #452024;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.path-app-supp,
+.ach {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    /* border: 2.5px solid #452024; */
+    border-radius: 4px;
+    margin: 5px;
+}
+
 .path-app,
 .path-network,
 .path-support,
 .responsibilities-achiever,
 .pay-it-forward {
-    border: 2.5px solid #452024;
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 6px;
+        border: 1px solid #452024;
+        border-radius: 4px;
+        margin: 5px;
+    }
 
 .achiever h2 {
     text-align: center;
@@ -592,7 +611,8 @@ figcaption:hover {
     } */
 
 
-    .placeholder-log {
+    .placeholder-log,
+    .placeholder-path {
         width: 5%;
         border: none;
     }
@@ -600,7 +620,11 @@ figcaption:hover {
     .how,
     .process,
     .identify-sponsors,
-    .network {
+    .network,
+    .path-app,
+    .path-support,
+    .responsibilities-achiever,
+    .pay-it-forward {
         width: 45%;
     }
 
@@ -648,31 +672,29 @@ figcaption:hover {
         order: 1;
         /* flex: 3; */
     }
-
+/* 
     
     .placeholder-path {
         width: 15%;
-        border: none;
-    }
+        border: none; */
+    
 
-    .achievement {
+    /* .achievement {
         border: 2.5px solid #452024;
         border-radius: 4px;
-        margin-bottom: 10px;
+        margin-bottom: 10px; */
         /* justify-content: space-evenly; */
-    }
+    /* } */
 
 
-    .achiever,
-    /* .placeholder-path */
-    .responsibilities-achiever {
+    .achiever {
         /* flex-direction: row; */
         border: 2.5px solid #452024;
         border-radius: 4px;
         margin-bottom: 10px;
         
     }
-
+/* 
     .responsibilities-achiever {
         margin: auto;
         width: 40%;
@@ -681,21 +703,21 @@ figcaption:hover {
 
     .pay-it-forward {
         margin: 10px;
-    }
+    } */
 
 
     /* .achievement  */
     .path-app,
-    .path-support {
-        /* flex-direction: row; */
+    .path-support,
+    .responsibilities-achiever,
+    .pay-it-forward {
         width: 40%
-        /* justify-content: space-between; */
     }
 
-    .path-app-supp {
+    /* .path-app-supp {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: wrap; */
         /* margin: auto; */
     }
 

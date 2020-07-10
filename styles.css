@@ -139,7 +139,8 @@ h2 {
     border-color: orange;
 } */
 
-.wrapper2 {
+.wrapper2,
+.kerikay {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -149,24 +150,28 @@ h2 {
     padding: 10px;
     border: 1.5px solid #452024;
     border-radius: 4px;
+    margin: 5px;
     /* margin-bottom: 10px; */
 }
 
-.why {
+.why,
+.kerikay-words {
     display: flex;
     flex-direction: column;
     max-width: 55%;
     flex-grow: 2;
 }
 
-.why h3 {
+.why h3,
+.kerikay-words h3 {
     margin: auto;
+    text-align: center;
 }
-
+/* 
 .kerikay {
     display: flex;
     flex-direction: column;
-}
+} */
 
 .how,
 .process {
@@ -184,7 +189,8 @@ h2 {
     margin-left: 20px;
 }
 
-.wrapper2 :hover{
+.why :hover,
+.kerikay-words :hover {
     background: white;
     /* border: 3px solid #452024; */
 
@@ -360,7 +366,9 @@ figcaption {
 
 
 .ron-ched,
-.img-flex {
+.img-flex,
+.kerikay-pic,
+.kerikay-img {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -370,6 +378,7 @@ figcaption {
 .caption {
     text-align: center;
 }
+
 
 figcaption:hover {
     background: #804d51;
@@ -381,7 +390,8 @@ figcaption:hover {
     flex-grow: 1;
 } */
 
-.main-img {
+.main-img,
+.kerikay-img {
     /* display: block; */
     /* margin-left: auto;
     margin-right: auto; */
@@ -396,9 +406,9 @@ figcaption:hover {
     /* align-items: center; */
 }
 
-.kerikay-img {
+/* .kerikay-img {
     border-radius: 4px;
-}
+} */
 
 /* ================================= 
   Media Queries
@@ -462,21 +472,17 @@ figcaption:hover {
         text-align: right;
     }
 
-    .kerikay-header {
+    /* .kerikay-header {
         text-align: center;
-    }
+    } */
 
     .kerikay {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .kerikay figure {
-        width: 35%
-    }
-
     .kerikay p {
-        width: 55%
+        text-align: left;
     }
 
     /* .placeholder-kerikay {
@@ -508,8 +514,9 @@ figcaption:hover {
         border-radius: 4px; */
     }
 
-    .wrapper2 :hover{
-        background: white;
+    /* .wrapper2 :hover,
+    .kerikay :hover {
+        background: white; */
         /* border: 3px solid #452024; */
 
     }

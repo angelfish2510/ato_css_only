@@ -19,6 +19,9 @@ body {
 header,
 footer {
     width: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+
 }
 
 
@@ -28,14 +31,29 @@ footer {
 ==================================== */
 
 .main-header {
-    border-bottom: 1.5px solid #452024;
+    border-bottom: 3px solid #452024;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 
 }
 
-.name,
+.mission,
 .main-nav {
-    display: block;
-    margin: auto;
+    flex-grow: 2;
+    /* display: block;
+    margin: auto; */
+}
+
+
+.name {
+    margin: 20px;
+    flex-grow: 1;
+    /* max-width: 60%; */
+    max-width: 250px;
 }
 
 .main-nav {
@@ -49,6 +67,9 @@ footer {
     align-items: center;
     display: flex;
     padding: 0;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    padding: 4px;
 }
 
 
@@ -91,13 +112,13 @@ footer {
     margin: 0 auto;
 }
 
-.mission {
+/* .mission {
     font-size: 1.2em;
     line-height: 1.2em;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 
 h2 {
@@ -362,24 +383,44 @@ figcaption:hover {
 
 @media (min-width: 768px) {
     
-    .main-header,
-    .main-nav {
-        display: flex;
+    .mission {
+        max-width: 35%;
     }
 
+    .mission {
+        order: -1;
+    }
+/* 
     .main-header {
         flex-direction: column;
         align-items: center;
     }
+ */
+    
+    /* .main-nav {
+       align-items: center;
+    } */
+    
+.nav-768 {
+    display: flex;
+    justify-content: center;
+}
 
+   .main-nav {
+       justify-content: center;
+   }
+   
     .main-nav li {
         display: inline-flex;
-        justify-content: space-around;
+        /* justify-content: space-between; */
+        justify-content: center;
+        align-items: center;
+        margin: auto;
     }
 
-    .mission {
+    /* .mission {
         margin-top: 10px;
-    }
+    } */
 
     h1 {
       margin-left: 10px;
@@ -624,21 +665,19 @@ figcaption:hover {
     .main-header {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
 
+    }
+
+    .mission {
+        width: 20%;
     }
     
     .name {
         margin-left: 5px;
     }
 
-    .main-nav {
-        margin-right: 5px;
-    }
 
-    .main-nav li {
-        font-size: 1.5em;
-    }
 
     .main-nav a {
         margin-left: 5px;

@@ -31,7 +31,7 @@ footer {
 ==================================== */
 
 .main-header {
-    border-bottom: 3px solid #452024;
+    border-bottom: 4.5px solid #452024;
     margin-bottom: 15px;
     display: flex;
     flex-direction: row;
@@ -139,9 +139,7 @@ h2 {
     border-color: orange;
 } */
 
-.wrapper2,
-.kerikay,
-.logistics {
+.wrapper2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -149,10 +147,24 @@ h2 {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    border: 1.5px solid #452024;
+    border: 2.5px solid #452024;
     border-radius: 4px;
     margin: 5px;
     /* margin-bottom: 10px; */
+}
+
+.logistics,
+.kerikay {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 2.5px solid #452024;
+    border-radius: 4px;
+    margin: 5px;
 }
 
 .why,
@@ -164,7 +176,9 @@ h2 {
 }
 
 .why h3,
-.kerikay-words h3 {
+.kerikay-words h3,
+.patrick-words h3,
+.jahnene-words h3 {
     margin: auto;
     text-align: center;
 }
@@ -189,7 +203,7 @@ h2 {
     display: flex;
     flex-direction: column;
     padding-left: 4px;
-    border: 1.5px solid #452024;
+    border: 1px solid #452024;
     border-radius: 4px;
     margin: 5px;
 }
@@ -202,7 +216,9 @@ h2 {
 .why :hover,
 .kerikay-words :hover,
 .how :hover,
-.process :hover {
+.process :hover,
+.patrick-words :hover,
+.jahnene-words :hover {
     background: white;
     /* border: 3px solid #452024; */
 
@@ -228,11 +244,33 @@ h2 {
   sponsors page
 ==================================== */
 
+.patrick,
+.jahnene {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #452024;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.patrick-words,
+.jahnene-words {
+    display: flex;
+    flex-direction: column;
+    max-width: 55%;
+    flex-grow: 2;
+    }
+
 .network {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1.5px solid #452024;
+    border: 2.5px solid #452024;
 }
 
 .identify-sponsors {
@@ -241,7 +279,7 @@ h2 {
     flex-basis: 0;
     align-items: center;
     padding: 10px;
-    border: 1.5px solid #452024;
+    border: 2.5px solid #452024;
     border-radius: 4px;
     margin-bottom: 10px;
     margin-top: 15px;
@@ -263,7 +301,7 @@ h2 {
     flex-basis: 0;
     align-items: center;
     padding: 10px;
-    border: 1.5px solid #452024;
+    border: 2.5px solid #452024;
     border-radius: 4px;
     margin-bottom: 10px;
     margin-top: 15px;
@@ -274,7 +312,7 @@ h2 {
     flex-direction: column;
     flex-basis: 0;
     align-items: center;
-    border: 1.5px solid #452024;
+    border: 2.5px solid #452024;
     border-radius: 4px;
 }
 
@@ -308,7 +346,7 @@ h2 {
 .path-support,
 .responsibilities-achiever,
 .pay-it-forward {
-    border: 1.5px solid #452024;
+    border: 2.5px solid #452024;
     border-radius: 4px;
     margin-bottom: 10px;
 }
@@ -368,7 +406,7 @@ h2 {
 
 .caption-placeholder,
 .placeholder-text {
-    color: yellow;
+    color: rgb(148, 114, 181);
 }
 
 figcaption {
@@ -382,7 +420,11 @@ figcaption {
 .ron-ched,
 .img-flex,
 .kerikay-pic,
-.kerikay-img {
+.kerikay-img,
+.patrick-pic,
+.patrick-img,
+.jahnene-pic,
+.jahnene-img {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -405,7 +447,9 @@ figcaption:hover {
 } */
 
 .main-img,
-.kerikay-img {
+.kerikay-img,
+.patrick-img,
+.jahnene-img {
     /* display: block; */
     /* margin-left: auto;
     margin-right: auto; */
@@ -420,9 +464,6 @@ figcaption:hover {
     /* align-items: center; */
 }
 
-/* .kerikay-img {
-    border-radius: 4px;
-} */
 
 /* ================================= 
   Media Queries
@@ -519,32 +560,6 @@ figcaption:hover {
         border-radius: 4px; */
     }
 
-    /* .wrapper2 :hover,
-    .kerikay :hover {
-        background: white; */
-        /* border: 3px solid #452024; */
-
-    }
-
-    /* .main-img {
-        max-width: 70%;
-    } */
-/* 
-    .how h3,
-    .process h3 {
-        margin: 0 auto;
-    } */
-
-    /* .how ul,
-    .process ul {
-        display: flex;
-        flex-direction: column;
-        list-style-position: inside;
-        /* list-style: list-item; */
-        /* padding: 2px;
-
-    }*/
-
     .identify-sponsors.
     .orgs-main {
         display: block;
@@ -568,55 +583,14 @@ figcaption:hover {
         width: 100%;
         text-align: center;      
     }
-
-    /* .patrick,
-    .ched {
-        display: flex;
-    } */
-
-
-
-    .bios-text {
-        display: flex;
-        flex-direction: row;
-        /* flex-wrap: wrap; */
-    }
-
-    /* .sponsor-bios h2 {
-        display: block;
-        margin: auto;
-
-    } */
-
-    /* .ched,
-    .patrick  {
-        border: 1.5px solid #452024;
-        border-radius: 4px;
-    } */
-
-    .ched,
-    .patrick {
-        display: flex;
-        flex-direction: column;
-        width: 40%
-        /* justify-items: space-between; */
-    }
-
-    /* .patrick-img  {
-        justify-content: center;
-    } */
-
-    /* .ched {
-        align-items: left;
-    } */
-
+/* 
     .placeholder-sponsors {
         display: flex;
         flex-direction: column;
         width: 15%;
-    }
+    } */
 
-    .sponsor-bios {
+    /* .sponsor-bios {
         padding-left: 5px;
         padding-right: 10px;
     }
@@ -624,7 +598,7 @@ figcaption:hover {
 
     .patrick {
         text-align: right;
-    }
+    } */
 
     .path-network {
         order: 1;
@@ -638,7 +612,7 @@ figcaption:hover {
     }
 
     .achievement {
-        border: 1.5px solid #452024;
+        border: 2.5px solid #452024;
         border-radius: 4px;
         margin-bottom: 10px;
         /* justify-content: space-evenly; */
@@ -649,7 +623,7 @@ figcaption:hover {
     /* .placeholder-path */
     .responsibilities-achiever {
         /* flex-direction: row; */
-        border: 1.5px solid #452024;
+        border: 2.5px solid #452024;
         border-radius: 4px;
         margin-bottom: 10px;
         

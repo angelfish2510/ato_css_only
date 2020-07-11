@@ -429,6 +429,46 @@ h2 {
   orgs page
 ==================================== */
 
+.wrapper3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: stretch;
+    justify-content: center;
+    padding: 10px;
+    /* border: 2.5px solid #452024; */
+    border-radius: 4px;
+    margin: 5px;
+    /* margin-bottom: 10px; */
+}
+
+.wrapper3 a {
+    text-decoration: none;
+}
+
+.org-flex {
+    max-width: 46%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4px;
+    border: 1px solid #452024;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.placeholder-org-flex {
+    width: 5%;
+}
+
+.org-link a {
+    color: #662c33;
+}
+
+.org-link a :hover {
+    color: white;
+}
+
 .orgs-main {
     display: flex;
     flex-direction: column;
@@ -441,12 +481,31 @@ h2 {
     margin-top: 15px; */
 } 
 
+.org-flex h3 {
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.org-flex p {
+    margin-bottom: 7px;
+}
+
 .orgs-main p {
     padding-bottom: 15px;
 }
 
-.orgs-main ul {
+.org-flex ul {
     list-style-position: inside;
+}
+
+.org-flex h5 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.org-flex h4 {
+    text-align: center;
+    margin-bottom: 5px;
 }
 
 .donate {
@@ -454,11 +513,15 @@ h2 {
     color: #202445;
     background: RGB(219, 219, 228);
     border-radius: 4px;
+    margin: 7px;
+    padding: 3px;
 }
 
 .donate h3 {
     text-align: center;
 }
+
+
 
 /* ================================= 
   Images
@@ -515,7 +578,9 @@ figcaption:hover {
 .kerikay-img,
 .patrick-img,
 .jahnene-img,
-.kids-with-certs-img {
+.kids-with-certs-img,
+.org-img,
+.donate {
     /* display: block; */
     /* margin-left: auto;
     margin-right: auto; */

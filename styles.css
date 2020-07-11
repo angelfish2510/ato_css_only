@@ -448,7 +448,7 @@ h2 {
 }
 
 .org-flex {
-    max-width: 46%;
+    max-width: 75%;
     display: flex;
     flex-direction: column;
     padding-left: 4px;
@@ -458,7 +458,7 @@ h2 {
 }
 
 .placeholder-org-flex {
-    width: 5%;
+    width: 7%;
 }
 
 .org-link a {
@@ -807,6 +807,17 @@ figcaption:hover {
     .path-app {
         width: 45%;
     } */
+
+    .org-flex {
+        max-width: 45%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    
+.placeholder-org-flex {
+    width: 5%;
+}
 }
 
 @media  (min-width: 1024px) {

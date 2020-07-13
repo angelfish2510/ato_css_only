@@ -13,12 +13,15 @@ body {
     margin: 0 auto;
     background: #e6d9d9;
     color: #662c33;
+    background-image: radial-gradient( circle at top, #ddeedc, #deb9bc);
 }
 
 
 header,
 footer {
     width: 100%;
+    background-image: linear-gradient(to right, #452023, #deb9bc);
+    color: #eedcdd;
     /* display: flex; */
     /* flex-direction: column; */
 
@@ -560,8 +563,18 @@ figcaption {
     display: flex;
     flex-direction: column;
     margin: auto;
+    transition: transform .8s;
+    /* perspective: 700px; */
     /* justify-items: center; */
 }
+
+/* img {
+    transition: transform .8s;
+}
+
+img :hover {
+    transform: scale(30, 30);
+} */
 
 .kids-with-certs-img {
     margin-left: 15px;
@@ -602,6 +615,7 @@ figcaption:hover {
     overflow: hidden;
     /* align-items: center; */
 }
+
 
 
 /* ================================= 

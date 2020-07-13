@@ -147,9 +147,9 @@ h2 {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    border: 2.5px solid #452024;
-    border-radius: 4px;
-    margin: 5px;
+    /* border: 2.5px solid #452024; */
+    /* border-radius: 4px; */
+    margin: 5px 5px 25px 5px;
     /* margin-bottom: 10px; */
 }
 
@@ -162,9 +162,13 @@ h2 {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    border: 2.5px solid #452024;
-    border-radius: 4px;
+    /* border: 2.5px solid #452024;
+    border-radius: 4px; */
     margin: 5px;
+}
+
+.logistics {
+    margin-top: 40px;
 }
 
 .why,
@@ -173,6 +177,10 @@ h2 {
     flex-direction: column;
     max-width: 55%;
     flex-grow: 2;
+}
+
+.kerikay-words {
+    margin-bottom: 25px;
 }
 
 .why h3,
@@ -297,8 +305,8 @@ h2 {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    border: 2.5px solid #452024;
-    border-radius: 4px;
+    /* border: 2.5px solid #452024;
+    border-radius: 4px; */
     margin: 5px;
 }
 
@@ -329,8 +337,8 @@ h2 {
     flex-basis: 0;
     align-items: center;
     padding: 10px;
-    border: 2.5px solid #452024;
-    border-radius: 4px;
+    /* border: 2.5px solid #452024;
+    border-radius: 4px; */
     margin-bottom: 10px;
     margin-top: 15px;
 }
@@ -340,8 +348,8 @@ h2 {
     flex-direction: column;
     flex-basis: 0;
     align-items: center;
-    border: 2.5px solid #452024;
-    border-radius: 4px;
+    /* border: 2.5px solid #452024;
+    border-radius: 4px; */
 }
 
 
@@ -378,8 +386,8 @@ h2 {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    border: 2.5px solid #452024;
-    border-radius: 4px;
+    /* border: 2.5px solid #452024;
+    border-radius: 4px; */
     margin: 5px;
 }
 
@@ -393,7 +401,7 @@ h2 {
     justify-content: center;
     padding: 10px;
     /* border: 2.5px solid #452024; */
-    border-radius: 4px;
+    /* border-radius: 4px; */
     margin: 5px;
 }
 
@@ -438,7 +446,7 @@ h2 {
     justify-content: center;
     padding: 10px;
     /* border: 2.5px solid #452024; */
-    border-radius: 4px;
+    /* border-radius: 4px; */
     margin: 5px;
     /* margin-bottom: 10px; */
 }
@@ -754,8 +762,8 @@ figcaption:hover {
 
     .achiever {
         /* flex-direction: row; */
-        border: 2.5px solid #452024;
-        border-radius: 4px;
+        /* border: 2.5px solid #452024;
+        border-radius: 4px; */
         margin-bottom: 10px;
         
     }
@@ -818,7 +826,7 @@ figcaption:hover {
 .placeholder-org-flex {
     width: 5%;
 }
-}
+
 
 @media  (min-width: 1024px) {
 
@@ -844,13 +852,35 @@ figcaption:hover {
     }
 
     .why {
-        max-width: 59%;
-        justify-content: space-around;
+        max-width: 40%;
+        margin-left: 45px;
+    }
+    
+    .wrapper2,
+    .ron-ched {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    /* .wrapper2 {
+        margin: 0 5px;
+    } */
+
+    .img-flex {
+        max-width: 90%;
+    }
+
+
+    .caption {
+        order: -1;
+        margin-right: 15px;
+        /* padding-right: 20px; */
     }
 
  
 }
-
 
 
 /* ---- Float clearfix ---- */

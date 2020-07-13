@@ -10,17 +10,20 @@
 
 body {
     font-family: 'Mallanna', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0 auto;
     background: #e6d9d9;
-    color: #662c33;
-    background-image: radial-gradient( circle at top, #ddeedc, #deb9bc);
+    color: #4d0013;
+    background-image: radial-gradient( circle at top, #d2fff4, #deb9bc);
 }
 
 
 header,
 footer {
     width: 100%;
-    background-image: linear-gradient(to right, #452023, #deb9bc);
+    background-image: linear-gradient(to right, #4d0013, #deb9bc);
     color: #eedcdd;
     /* display: flex; */
     /* flex-direction: column; */
@@ -34,7 +37,7 @@ footer {
 ==================================== */
 
 .main-header {
-    border-bottom: 4.5px solid #452024;
+    border-bottom: 4.5px solid #4d0013;
     margin-bottom: 15px;
     display: flex;
     flex-direction: row;
@@ -86,7 +89,7 @@ footer {
 
 
 .main-nav a {
-    background: #662c33;
+    background: #4d0013;
     color: #e6d9d9;
     text-decoration: none;
     display: block;
@@ -212,7 +215,8 @@ h2 {
     display: flex;
     flex-direction: column;
     padding-left: 4px;
-    border: 1px solid #452024;
+    background-image: radial-gradient( circle at top, #d2fff4, #deb9bc);
+    border: 1px solid #004d3a;
     border-radius: 4px;
     margin: 5px;
 }
@@ -319,8 +323,9 @@ h2 {
     display: flex;
     flex-direction: column;
     padding: 6px;
-    /* border: 1px solid #452024;
-    border-radius: 4px; */
+    background-image: radial-gradient( circle at top, #d2fff4, #deb9bc);
+    border: 1px solid #452024;
+    border-radius: 4px;
     margin: 5px;
 }
 
@@ -366,7 +371,7 @@ blockquote {
     text-align: center;
     padding-top: 15px;
     font-family:  'Merienda One', cursive;
-    color: #234520;
+    color: #004d3a;
     margin-bottom: 35px;
     font-size: 1.5em;
     /* max-width: 100%; */
@@ -423,8 +428,9 @@ blockquote {
         display: flex;
         flex-direction: column;
         padding: 6px;
-        /* border: 1px solid #452024;
-        border-radius: 4px; */
+        background-image: radial-gradient( circle at top, #d2fff4, #deb9bc);
+        /* border: 1px solid #452024; */
+        border-radius: 6px;
         margin: 5px;
     }
 
@@ -469,7 +475,8 @@ blockquote {
     display: flex;
     flex-direction: column;
     padding-left: 4px;
-    border: 1px solid #452024;
+    background-image: radial-gradient( circle at top, #d2fff4, #deb9bc);
+    border: 1px solid #004d3a;
     border-radius: 4px;
     margin: 5px;
 }

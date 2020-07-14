@@ -216,6 +216,12 @@ h2 {
     margin-top: 40px;
 }
 
+.why {
+    background-image: radial-gradient( circle at top, #d2fff4, #deb9bc);
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+
 .why,
 .kerikay-words {
     display: flex;
@@ -253,16 +259,18 @@ h2 {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-left: 4px;
+    /* padding-left: 4px; */
     background-image: radial-gradient( circle at top, #d2fff4, #deb9bc);
     /* border: 1px solid #004d3a; */
     border-radius: 6px;
     margin: 5px;
+    padding: 5px 10px;
 }
 
 .sponsors-role {
     background-image: radial-gradient( circle at top, #d2fff4, #deb9bc);
     border-radius: 6px;
+    padding: 5px 10px;
 }
 
 
@@ -270,16 +278,20 @@ h2 {
     margin-left: 20px;
 }
 
-.why :hover,
+.kerikay-words p,
+.patrick-words p,
+.jahnene-words p {
+    padding: 5px 10px;
+}
+
+/* .why :hover, */
 .kerikay-words :hover,
-.how :hover,
-.process :hover,
+/* .how :hover, */
+/* .process :hover, */
 .patrick-words :hover,
-.jahnene-words :hover,
-.sponsors-role-list :hover,
-.identify-sponsors :hover,
-.network :hover {
-    background: white;
+.jahnene-words :hover {
+    background: #fffaec;
+    border-radius: 6px;
     /* border: 3px solid #452024; */
 
 }
@@ -371,6 +383,7 @@ h2 {
     /* border: 1px solid #452024; */
     border-radius: 6px;
     margin: 5px;
+    padding: 5px 10px;
 }
 
 .identify-sponsors p,
@@ -476,6 +489,7 @@ blockquote {
         /* border: 1px solid #452024; */
         border-radius: 6px;
         margin: 5px;
+        padding: 5px 10px;
     }
 
 .achiever h2 {
@@ -518,11 +532,12 @@ blockquote {
     max-width: 75%;
     display: flex;
     flex-direction: column;
-    padding-left: 4px;
+    /* padding-left: 4px; */
     background-image: radial-gradient( circle at top, #d2fff4, #deb9bc);
     /* border: 1px solid #004d3a; */
     border-radius: 6px;
     margin: 5px;
+    padding: 5px 10px;
 }
 
 .placeholder-org-flex {

@@ -63,7 +63,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    padding: 0 10px;
+    padding: 5px 0px 20px 0px;
 
 }
 
@@ -150,6 +150,7 @@ footer {
     background: #d2fff4;
     color: #004d3a;
 }
+
 
 
 /* ================================= 
@@ -705,6 +706,9 @@ figcaption:hover {
         order: -1;
     }
 
+    .main-footer {
+        padding: 0px 0px 20px 0px;
+    }
     /* .nonprofit-footer {
         order: 1;
     } */

@@ -255,9 +255,14 @@ h2 {
     flex-direction: column;
     padding-left: 4px;
     background-image: radial-gradient( circle at top, #d2fff4, #deb9bc);
-    border: 1px solid #004d3a;
-    border-radius: 4px;
+    /* border: 1px solid #004d3a; */
+    border-radius: 6px;
     margin: 5px;
+}
+
+.sponsors-role {
+    background-image: radial-gradient( circle at top, #d2fff4, #deb9bc);
+    border-radius: 6px;
 }
 
 
@@ -363,8 +368,8 @@ h2 {
     flex-direction: column;
     padding: 6px;
     background-image: radial-gradient( circle at top, #d2fff4, #deb9bc);
-    border: 1px solid #452024;
-    border-radius: 4px;
+    /* border: 1px solid #452024; */
+    border-radius: 6px;
     margin: 5px;
 }
 
@@ -515,8 +520,8 @@ blockquote {
     flex-direction: column;
     padding-left: 4px;
     background-image: radial-gradient( circle at top, #d2fff4, #deb9bc);
-    border: 1px solid #004d3a;
-    border-radius: 4px;
+    /* border: 1px solid #004d3a; */
+    border-radius: 6px;
     margin: 5px;
 }
 

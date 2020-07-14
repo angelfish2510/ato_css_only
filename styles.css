@@ -20,14 +20,20 @@ body {
 }
 
 
-header,
-footer {
+header {
     width: 100%;
     background-image: linear-gradient(to right, #4d0013, #deb9bc);
     color: #eedcdd;
     /* display: flex; */
     /* flex-direction: column; */
 
+}
+
+
+footer {
+    width: 100%;
+    background-image: linear-gradient(to left, #4d0013, #deb9bc);
+    color: #eedcdd;
 }
 
 
@@ -44,18 +50,48 @@ footer {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    padding: 0 10px;
+
+}
+
+.main-footer {
+    border-top: 4.5px solid #4d0013;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
 
 }
 
 .mission,
-.main-nav {
+.main-nav,
+.nonprofit-footer,
+.main-nav-footer {
+    display: flex;
     flex-grow: 2;
     /* display: block;
     margin: auto; */
 }
 
+.mission p {
+    padding-bottom: 25px;
+    font-size: 1.3em;
+    text-align: center;
+}
 
-.name {
+/* .nonprofit-footer p {
+    display: flex;
+    padding-bottom: 25px;
+    font-size: 1.1em;
+    text-align: center;
+} */
+
+.name,
+.name-footer {
     margin: 20px;
     flex-grow: 1;
     /* max-width: 60%; */
@@ -66,7 +102,12 @@ footer {
     margin-bottom: 8px;
 }
 
-.main-nav li {
+.main-nav-footer {
+    margin-top: 8px;
+}
+
+.main-nav li,
+.main-nav-footer li {
     list-style-type: none;
     text-decoration: none;
     justify-content: center;
@@ -88,7 +129,8 @@ footer {
 } */
 
 
-.main-nav a {
+.main-nav a,
+.main-nav-footer a {
     background: #4d0013;
     color: #e6d9d9;
     text-decoration: none;
@@ -103,8 +145,10 @@ footer {
     border-radius: 4px;
 }
 
-.main-nav a:hover {
-    background: blue;
+.main-nav a:hover,
+.main-nav-footer a:hover {
+    background: #d2fff4;
+    color: #004d3a;
 }
 
 
@@ -132,11 +176,6 @@ h2 {
     padding-bottom: 15px;
 }
 
-.mission p {
-    padding-bottom: 25px;
-    font-size: 1.3em;
-    text-align: center;
-}
 
 /* 
 .main-flex {
@@ -637,13 +676,19 @@ figcaption:hover {
 
 @media (min-width: 768px) {
     
-    .mission {
+    .mission,
+    .nonprofit-footer {
         max-width: 35%;
     }
 
     .mission {
         order: -1;
     }
+
+    /* .nonprofit-footer {
+        order: 1;
+    } */
+
 /* 
     .main-header {
         flex-direction: column;
@@ -655,26 +700,37 @@ figcaption:hover {
        align-items: center;
     } */
     
-.nav-768 {
+.nav-768,
+.nav-768-footer {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 }
 
-   .main-nav {
+.main-nav-footer-768 {
+    /* order: -1; */
+    flex-grow: 2;
+}
+
+.name-footer,
+.nonprofit-footer {
+    flex-grow: 1;
+}
+
+   .main-nav,
+   .main-nav-footer {
        justify-content: center;
    }
    
-    .main-nav li {
+    .main-nav li,
+    .main-nav-footer li {
         display: inline-flex;
-        /* justify-content: space-between; */
         justify-content: center;
         align-items: center;
         margin: auto;
     }
 
-    /* .mission {
-        margin-top: 10px;
-    } */
 
     h1 {
       margin-left: 10px;
@@ -857,18 +913,21 @@ figcaption:hover {
 
 @media  (min-width: 1024px) {
 
-    .main-header {
+    .main-header,
+    .main-footer {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
 
     }
 
-    .mission {
+    .mission,
+    .nonprofit-footer {
         width: 20%;
     }
     
-    .name {
+    .name,
+    .name-footer {
         margin-left: 5px;
     }
 
@@ -876,6 +935,10 @@ figcaption:hover {
 
     .main-nav a {
         margin-left: 5px;
+    }
+
+    .main-nav-footer a {
+        margin-right: 5px;
     }
 
     .why {

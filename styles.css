@@ -423,9 +423,7 @@ h2 {
   achievers page
 ==================================== */
 
-.def,
-q,
-blockquote {
+.def {
     text-align: center;
     padding-top: 15px;
     font-family:  'Merienda One', cursive;
@@ -706,7 +704,15 @@ figcaption:hover {
     max-width: 95%;
 }
 
-
+q,
+blockquote {
+    text-align: center;
+    padding-top: 15px;
+    font-family:  'Merienda One', cursive;
+    color: #004d3a;
+    margin-bottom: 25px;
+    font-size: 1.15em;
+}
 
 /* ================================= 
   Media Queries

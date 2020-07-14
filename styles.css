@@ -151,8 +151,6 @@ footer {
     color: #004d3a;
 }
 
-
-
 /* ================================= 
   ato main page
 ==================================== */
@@ -547,12 +545,21 @@ h2 {
     padding-bottom: 25px;
 }
 
-.org-link a {
+.org-link a,
+.fbb-link a {
     color: #662c33;
+    text-decoration: none;
 }
 
-.org-link a :hover {
-    color: white;
+.org-link a:hover,
+.fbb-link a:hover {
+    background: #4d0013;
+    border-radius: 6px;
+    color: #fffaec;
+}
+
+.fbb-link {
+    padding-bottom: 30px;
 }
 
 .orgs-main {
@@ -1024,6 +1031,11 @@ blockquote {
         float: left;
         margin-right:12px;
     }
+/* 
+    .donate {
+        align-items: flex-end;
+        max-height: 200px;
+    } */
  
 }
 

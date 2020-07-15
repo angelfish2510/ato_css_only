@@ -221,13 +221,13 @@ h2 {
     padding: 5px 10px;
 }
 
-.why,
+/* .why,
 .kerikay-words {
     display: flex;
     flex-direction: column;
     max-width: 55%;
     flex-grow: 2;
-}
+} */
 
 .kerikay-words {
     margin-bottom: 25px;
@@ -266,22 +266,15 @@ h2 {
     padding: 5px 10px;
 }
 
-.sponsors-role {
-    background-image: radial-gradient( circle at top, #d2fff4, #deb9bc);
-    border-radius: 6px;
-    padding: 5px 10px;
-}
-
-
 .sublist {
     margin-left: 20px;
 }
 
-.kerikay-words p,
+/* .kerikay-words p,
 .patrick-words p,
 .jahnene-words p {
     padding: 5px 10px;
-}
+} */
 
 /* .why :hover, */
 .kerikay-words :hover,
@@ -330,14 +323,14 @@ h2 {
     margin: 5px;
 }
 
-.patrick-words,
+/* .patrick-words,
 .jahnene-words,
 .sponsors-role {
     display: flex;
     flex-direction: column;
     max-width: 55%;
     flex-grow: 2;
-    }
+    } */
 
 .patrick-words h3,
 .jahnene-words h3,
@@ -372,6 +365,13 @@ h2 {
     margin: 5px;
 }
 
+
+.sponsors-role {
+    background-image: radial-gradient( circle at top, #d2fff4, #deb9bc);
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+
 .identify-sponsors,
 .network {
     width: 100%;
@@ -398,7 +398,7 @@ h2 {
 .sponsors-role {
     display: flex;
     flex-direction: column;
-    flex-basis: 0;
+    /* flex-basis: 0; */
     align-items: center;
     padding: 10px;
     /* border: 2.5px solid #452024;
@@ -429,6 +429,10 @@ h2 {
     margin-bottom: 35px;
     font-size: 1.5em;
     /* max-width: 100%; */
+}
+
+.sponsor-bios h1 {
+    margin-bottom: 15px;
 }
 
 /* .achievement, */
@@ -503,6 +507,10 @@ h2 {
 
 }
 
+.path-network p {
+    padding: 2px 25px;
+}
+
 /* ================================= 
   orgs page
 ==================================== */
@@ -525,8 +533,12 @@ h2 {
     text-decoration: none;
 }
 
+.orgs-we-support h1 {
+    text-align: center;
+}
+
 .org-flex {
-    max-width: 75%;
+    /* max-width: 75%; */
     display: flex;
     flex-direction: column;
     /* padding-left: 4px; */
@@ -538,7 +550,7 @@ h2 {
 }
 
 .placeholder-org-flex {
-    width: 7%;
+    visibility: hidden;
 }
 
 .org-link {
@@ -646,11 +658,13 @@ figcaption {
 .patrick-img,
 .jahnene-pic,
 .jahnene-img,
+.yuniek-pic,
+.yuniek-img,
 .kids-with-certs-img {
     display: flex;
     flex-direction: column;
     margin: auto;
-    transition: transform .8s;
+    /* transition: transform .8s; */
     /* perspective: 700px; */
     /* justify-items: center; */
 }
@@ -686,6 +700,7 @@ figcaption:hover {
 .kerikay-img,
 .patrick-img,
 .jahnene-img,
+.yuniek-img,
 .kids-with-certs-img,
 .org-img,
 .donate {
@@ -786,9 +801,9 @@ blockquote {
     }
 
 
-    h1 {
+    /* h1 {
       margin-left: 10px;
-    }
+    } */
 
     .img-flex {
         max-width: 40%;
@@ -798,6 +813,14 @@ blockquote {
     .img-flex {
         margin: 1px;
     }
+
+    .why,
+.kerikay-words {
+    display: flex;
+    flex-direction: column;
+    max-width: 55%;
+    flex-grow: 2;
+}
     
     .why p {
         text-align: right;
@@ -820,6 +843,29 @@ blockquote {
         width: 5%;
     } */
 
+    .kerikay-words p,
+    .patrick-words p,
+    .jahnene-words p {
+        padding: 5px 10px;
+    }
+
+    .patrick-words,
+    .jahnene-words,
+    .sponsors-role {
+        display: flex;
+        flex-direction: column;
+        max-width: 55%;
+        flex-grow: 2;
+    }
+
+    .sponsors-role {
+        flex-basis: 0;
+    }
+
+    .jahnene-pic,
+    .yuniek-pic {
+        max-width: 40%;
+    }
 
     .placeholder-log,
     .placeholder-path {
@@ -929,7 +975,7 @@ blockquote {
         flex-direction: row;
         flex-wrap: wrap; */
         /* margin: auto; */
-    }
+    
 
 
     .afieni,
@@ -962,6 +1008,8 @@ blockquote {
     
 .placeholder-org-flex {
     width: 5%;
+}
+
 }
 
 
@@ -1017,7 +1065,7 @@ blockquote {
     }
 
 
-    .caption {
+    .caption-main {
         order: -1;
         margin-right: 15px;
         /* padding-right: 20px; */

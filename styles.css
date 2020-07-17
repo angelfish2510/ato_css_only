@@ -323,6 +323,10 @@ h2 {
     margin: 5px;
 }
 
+.sponsors-with-pic {
+    align-items: flex-start;
+}
+
 /* .patrick-words,
 .jahnene-words,
 .sponsors-role {
@@ -677,10 +681,6 @@ img :hover {
     transform: scale(30, 30);
 } */
 
-.kids-with-certs-img {
-    margin-left: 15px;
-}
-
 .caption {
     text-align: center;
 }
@@ -729,10 +729,10 @@ figcaption:hover {
 q,
 blockquote {
     text-align: center;
-    padding-top: 15px;
+    padding: 15px 10px 0px;
     font-family:  'Merienda One', cursive;
     color: #004d3a;
-    margin-bottom: 25px;
+    margin: 0 auto 25px;
     font-size: 1.15em;
 }
 
@@ -860,6 +860,10 @@ blockquote {
 
     .sponsors-role {
         flex-basis: 0;
+    }
+
+    .kids-with-certs-img {
+        margin-left: 15px;
     }
 
     .jahnene-pic,

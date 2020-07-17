@@ -720,6 +720,11 @@ figcaption:hover {
     /* align-items: center; */
 }
 
+.patrick-pic,
+.yuniek-pic {
+    order: -1;
+}
+
 .org-img-dock {
     float: left;
     margin-left: 15px;
@@ -858,6 +863,11 @@ blockquote {
         flex-direction: column;
         max-width: 55%;
         flex-grow: 2;
+    }
+
+    .patrick-pic,
+    .yuniek-pic {
+        order: 1;
     }
 
     .sponsors-role {
